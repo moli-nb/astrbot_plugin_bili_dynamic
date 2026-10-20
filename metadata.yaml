@@ -7,3 +7,9 @@ repo: "https://github.com/moli-nb/astrbot_plugin_bili_dynamic"
 support_platforms:
   - qq_official
   - qq_official_webhook
+tags:
+  - B站
+  - 订阅
+  - 推送
+  - 监控
+  - Markdown
