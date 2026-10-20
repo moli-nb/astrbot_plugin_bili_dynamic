@@ -1,0 +1,9 @@
+name: astrbot_plugin_bili_dynamic
+display_name: B站动态订阅推送
+desc: 全局监控 B 站 UP 主动态，按会话订阅关系推送。QQ 官方机器人原生 Markdown 排版（图文/视频/转发/专栏等卡片模板），支持置顶动态特殊处理与接口自动降级。
+version: v1.0.0
+author: moli
+repo: "https://github.com/moli-nb/astrbot_plugin_bili_dynamic"
+support_platforms:
+  - qq_official
+  - qq_official_webhook

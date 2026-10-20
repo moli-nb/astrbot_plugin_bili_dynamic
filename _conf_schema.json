@@ -1,0 +1,38 @@
+{
+    "sessdata": {
+        "description": "B站 SESSDATA（可选）",
+        "type": "string",
+        "hint": "填写后完整动态接口的稳定性显著提高（匿名状态下偶发返回空数据）。在已登录的 bilibili.com 浏览器 Cookie 中复制 SESSDATA 的值填入即可；留空也能用，但可能只推送图文动态（自动降级）。",
+        "default": ""
+    },
+    "poll_interval": {
+        "description": "轮询间隔（秒）",
+        "type": "int",
+        "hint": "每隔多少秒检查一轮所有被订阅 UP 主的动态，建议 60~300。间隔越短越及时，但被风控的概率也越高。",
+        "default": 120
+    },
+    "max_push_per_poll": {
+        "description": "单次每个 UP 最多推送条数",
+        "type": "int",
+        "hint": "一次检查中某 UP 主更新超过该数量时（例如插件长时间离线后），只推送最新的几条，避免刷屏。",
+        "default": 5
+    },
+    "push_pinned": {
+        "description": "推送置顶动态",
+        "type": "bool",
+        "hint": "开启：UP 主新发布并被置顶的动态会正常推送，并带有（置顶）标记；过时的置顶旧动态不会被重复推送。关闭：置顶动态一律不推送。",
+        "default": true
+    },
+    "block_vote_join": {
+        "description": "屏蔽「参与了投票」的动态",
+        "type": "bool",
+        "hint": "开启：UP 主参与投票产生的「我参与了投票…」动态不会推送；关闭：正常推送。此开关为全局开关，只影响「参与投票方」的自动动态，不影响发起投票方的正常动态。",
+        "default": true
+    },
+    "admin_only": {
+        "description": "仅管理员可管理订阅",
+        "type": "bool",
+        "hint": "开启后，只有 AstrBot 管理员（admins_id）可以使用订阅/取关指令。",
+        "default": false
+    }
+}
